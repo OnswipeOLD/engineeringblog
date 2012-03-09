@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Onswipe Engineering
+tagline: The Onswipe Engineering blog.
 ---
 {% include JB/setup %}
 
