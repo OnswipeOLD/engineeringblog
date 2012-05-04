@@ -80,7 +80,7 @@ ul.posts {
 
 .site {
   font-size: 110%;
-  text-align: justify;
+  text-align: left;
   width: 40em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
@@ -155,6 +155,7 @@ ul.posts {
   /* standard */
 
   #post pre {
+    overflow-x: scroll;
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
