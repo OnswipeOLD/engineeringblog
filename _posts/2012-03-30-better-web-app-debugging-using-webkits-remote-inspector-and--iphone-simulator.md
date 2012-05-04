@@ -59,7 +59,18 @@ Save this to a file called `iosd` in your `/usr/local/bin folder` then run this 
     $ cd /usr/local/bin/
     $ chmod a+x iosd
     $ ./iosd
-    
+        
+
+### Credit where credit is due
+
+We couldn't have made this happen without these resources:
+
+- [original bash script gist](https://gist.github.com/2029432)
+
+- [Remote debuggin - code couch](http://www.codecouch.com/2011/11/remote-debugging-mobile-safari-web-apps-that-have-been-added-to-the-home-screen/)
+- [Enabling remote debugging - atnan.com](http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/)
+
+
 Hearts,
 
 **The Onswipe Engineering Team**
