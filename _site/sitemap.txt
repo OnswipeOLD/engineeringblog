@@ -7,5 +7,5 @@ http://engineering.onswipe.com/pages.html
 http://engineering.onswipe.com/sitemap.txt
 http://engineering.onswipe.com/tags.html
 
+http://engineering.onswipe.com/2012/03/30/better-web-app-debugging-using-webkits-remote-inspector-and--iphone-simulator
 http://engineering.onswipe.com/2012/03/18/hello-world
-http://engineering.onswipe.com/lessons/2011/12/29/jekyll-introduction
