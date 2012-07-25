@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Better Web App debugging using WebKit's remote inspector and  iPhone Simulator"
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -10,15 +10,15 @@ Debugging tools like Firebug, and Webkit's Inspector are now considered major as
 
 Not many people know about WebKit's ability to debug remote code. And what even less people know is that you can enable the remote inspector for Mobile Safari for iPhone Simulator in OSX with some minor hacks.
 
-At Onswipe, we're constantly looking for ways to improve our workflows and make our lives a little easier. This time, we came across a private API in iOS that allows you to enable the remote inspector. After getting it to work through a very manual process, we searched the internets and found out a post on [Nathan de Vries' blog](http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/) that mentioned the same private API we came across. 
+At Onswipe, we're constantly looking for ways to improve our workflows and make our lives a little easier. This time, we came across a private API in iOS that allows you to enable the remote inspector. After getting it to work through a very manual process, we searched the internets and found out a post on [Nathan de Vries' blog](http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/) that mentioned the same private API we came across.
 
 This is how it looks:
-![Remote Safari Inspector](http://dl.dropbox.com/u/4886457/Screenshots/iosd_s.png)
+![Remote Safari Inspector](http://engineering.onswipe.com.s3.amazonaws.com/img/iosd_s.png)
 
-[HI-RES Image](http://dl.dropbox.com/u/4886457/Screenshots/iosd.png)
+[HI-RES Image](http://engineering.onswipe.com.s3.amazonaws.com/img/iosd.png)
 
 
-To make things easier, Cam and Juan got together and wrote a bash script for your debugging pleasure. The script automates the process of launching iPhone Simulator, attaching to the Mobile Safari process to enable the Inspector and launches Safari. 
+To make things easier, Cam and Juan got together and wrote a bash script for your debugging pleasure. The script automates the process of launching iPhone Simulator, attaching to the Mobile Safari process to enable the Inspector and launches Safari.
 
     #!/bin/bash
 
@@ -59,7 +59,7 @@ Save this to a file called `iosd` in your `/usr/local/bin folder` then run this 
     $ cd /usr/local/bin/
     $ chmod a+x iosd
     $ ./iosd
-        
+
 
 ### Credit where credit is due
 
@@ -74,4 +74,3 @@ We couldn't have made this happen without these resources:
 Hearts,
 
 **The Onswipe Engineering Team**
-    
