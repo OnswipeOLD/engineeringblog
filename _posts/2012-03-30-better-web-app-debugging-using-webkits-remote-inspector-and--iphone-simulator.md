@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Better Web App debugging using WebKit's remote inspector and  iPhone Simulator"
+title: "Better Web App debugging using WebKit's remote inspector and iPhone Simulator"
 category:
 tags: []
 ---
