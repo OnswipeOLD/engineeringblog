@@ -4,7 +4,7 @@
  <title>Onswipe Engineering</title>
  <link href="http://engineering.onswipe.com/atom.xml" rel="self"/>
  <link href="http://engineering.onswipe.com"/>
- <updated>2012-05-04T17:15:26-04:00</updated>
+ <updated>2012-08-10T17:53:35-04:00</updated>
  <id>http://engineering.onswipe.com</id>
  <author>
    <name>Onswipe Engineering</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Better Web App debugging using WebKit's remote inspector and  iPhone Simulator</title>
+   <title>Better Web App debugging using WebKit's remote inspector and iPhone Simulator</title>
    <link href="http://engineering.onswipe.com/2012/03/30/better-web-app-debugging-using-webkits-remote-inspector-and--iphone-simulator"/>
    <updated>2012-03-30T00:00:00-04:00</updated>
    <id>hhttp://engineering.onswipe.com/2012/03/30/better-web-app-debugging-using-webkits-remote-inspector-and--iphone-simulator</id>
@@ -23,9 +23,9 @@
 
 &lt;p&gt;At Onswipe, we&amp;#8217;re constantly looking for ways to improve our workflows and make our lives a little easier. This time, we came across a private API in iOS that allows you to enable the remote inspector. After getting it to work through a very manual process, we searched the internets and found out a post on &lt;a href='http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/'&gt;Nathan de Vries&amp;#8217; blog&lt;/a&gt; that mentioned the same private API we came across.&lt;/p&gt;
 
-&lt;p&gt;This is how it looks: &lt;img src='http://dl.dropbox.com/u/4886457/Screenshots/iosd_s.png' alt='Remote Safari Inspector' /&gt;&lt;/p&gt;
+&lt;p&gt;This is how it looks: &lt;img src='http://engineering.onswipe.com.s3.amazonaws.com/img/iosd_s.png' alt='Remote Safari Inspector' /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://dl.dropbox.com/u/4886457/Screenshots/iosd.png'&gt;HI-RES Image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://engineering.onswipe.com.s3.amazonaws.com/img/iosd.png'&gt;HI-RES Image&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To make things easier, Cam and Juan got together and wrote a bash script for your debugging pleasure. The script automates the process of launching iPhone Simulator, attaching to the Mobile Safari process to enable the Inspector and launches Safari.&lt;/p&gt;
 
@@ -68,6 +68,24 @@ open -a /Applications/Safari.app http://localhost:9999&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;$ cd /usr/local/bin/
 $ chmod a+x iosd
 $ ./iosd&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id='credit_where_credit_is_due'&gt;Credit where credit is due&lt;/h3&gt;
+
+&lt;p&gt;We couldn&amp;#8217;t have made this happen without these resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://gist.github.com/2029432'&gt;original bash script gist&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.codecouch.com/2011/11/remote-debugging-mobile-safari-web-apps-that-have-been-added-to-the-home-screen/'&gt;Remote debuggin - code couch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/'&gt;Enabling remote debugging - atnan.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Hearts,&lt;/p&gt;
 

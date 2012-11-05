@@ -1,0 +1,358 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font: 13px "Helvetica Neue", helvetica, arial, clean, sans-serif;
+  text-align: center;
+  border-top: 5px solid #000;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #f10078;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    color: #000;
+    -webkit-transition: none;
+  }
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 110%;
+  text-align: left;
+  width: 60em;
+  margin: 3em auto 2em auto;
+  line-height: 21px;
+}
+
+header {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 38px;
+  height: 38px;
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  color: #aaa;
+}
+
+.title {
+  color: #a00;
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 2.5em;
+  padding-right: 50px;
+  height: 100%;
+  float: left;
+}
+
+  .title span {
+    display: inline-block;
+    width: 144px;
+    height: 36px;
+    background: url(../images/logo.png) center center no-repeat;
+    background-size: 144px 36px;
+    text-indent: -9999em;
+    margin-right: 7px;
+  }
+
+  .site .title a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  .site .title a:hover {
+    color: black;
+  }
+
+  .site .title a.extra {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+  .site .title a.extra:hover {
+    color: black;
+  }
+
+  .site footer {
+    font-size: 80%;
+    color: #666;
+    border-top: 4px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
+    clear: both;
+  }
+
+    .site footer .contact {
+      float: left;
+      margin-right: 3em;
+    }
+
+      .site footer .contact a {
+        color: #8085C1;
+      }
+
+    .site footer .rss {
+      margin-top: 1.1em;
+      margin-right: -.2em;
+      float: right;
+    }
+
+      .site footer .rss img {
+        border: 0;
+      }
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+#post {
+  clear: left;
+  float: left;
+  width: 65%;
+  padding-bottom: 2em;
+}
+#page #post {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+  #post h2.post-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #post h2.post-title a {
+    color: #000;
+  }
+    #post h2.post-title a:active {
+      color: #555;
+    }
+
+  #post .meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+  }
+
+  /* standard */
+
+  #post h3,
+  #post h4,
+  #post h5,
+  #post h6 {
+    margin: 1em 0;
+    color: #000;
+  }
+  #post h3 {
+    font-size: 1.25em;
+  }
+
+  #post pre {
+    overflow-x: scroll;
+    border: 1px solid #ddd;
+    background-color: #eef;
+    padding: 0 .4em;
+  }
+
+  #post img {
+    display: block;
+    max-width: 100%;
+    margin: 0.5em 0;
+  }
+
+  #post ul,
+  #post ol {
+    margin-left: 2.5em;
+  }
+    #post ul p:only-child,
+    #post ol p:only-child {
+      margin: 0;
+    }
+
+  #post code {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    font-size: 85%;
+    padding: 0 .2em;
+  }
+
+    #post pre code {
+      border: none;
+    }
+
+  /* terminal */
+
+  #post pre.terminal {
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+  }
+  #post pre.terminal code {
+    background-color: #333;
+  }
+
+/*****************************************************************************/
+/*
+/* Sidebar
+/*
+/*****************************************************************************/
+
+aside {
+  float: right;
+  width: 31%;
+  padding-bottom: 2em;
+}
+
+aside h2 {
+  color: #000;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  padding: 0.778em 0;
+  margin: -0.083em 0;
+  border-bottom: 0.167em solid #eee;
+}
+  aside h2:first-child {
+    margin-bottom: 0.5em;
+    border: none;
+    padding: 0;
+  }
+  aside h2 a {
+    display: block;
+  }
+#twitter-button {
+  float: left;
+  margin-top: 1.3em;
+}
+#subscribe-button {
+  margin-top: -3px;
+}
+#subscribe-button a {
+  display: block;
+  background: url(../images/rss.png) center no-repeat;
+  background-size: 31px 31px;
+  text-indent: -9999em;
+  width: 31px;
+  height: 31px;
+  margin-top: 1.3em;
+  margin-left: 155px;
+}
+
+ul.posts {
+  list-style-type: none;
+  border-bottom: 0.214em solid #eee;
+  padding-bottom: 0.786em;
+}
+  ul.posts li {
+    margin-bottom: 0.5em;
+  }
+  ul.posts a, 
+  ul.archive-list a {
+    display: block;
+    text-decoration: none;
+  }
+    ul.posts a:hover .post-title,
+    ul.archive-list a:hover .post-title {
+      text-decoration: underline;
+    }
+  .post-date {
+    display: block;
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+#related {
+  margin-top: 2em;
+}
+
+  #related h2 {
+    margin-bottom: 1em;
+  }
+
+/*****************************************************************************/
+/*
+/* Pages
+/*
+/*****************************************************************************/
+
+#page {
+  clear: left;
+  float: left;
+  width: 65%;
+  padding-bottom: 2em;
+}
+#page h2.year,
+#page h3.month {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
+}
+
+#page h3.month {
+  margin: 0.5em 0;
+  float: left;
+  clear: left;
+  width: 20%;
+}
+
+#page ul.archive-list {
+  float: right;
+  width: 75%;
+  margin-top: 1.25em;
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.archive-list li {
+  margin-bottom: 0.5em;
+}

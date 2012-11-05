@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="{{ site.author.name }}" />
+   <link href="http://feeds.feedburner.com/{{ site.author.feedburner }}" rel="alternate" title="your title" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typekit -->
+   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+  <div class="site">
+    <header>
+      <h1 class="title"><a href="{{ HOME_PATH }}"><span>Onswipe</span> Engineering</a></h1>
+
+    </header>
+  
+    {{ content }}
+  
+    <aside>
+      <h2>Recent posts</h2>
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li><a href="{{ BASE_PATH }}{{ post.url }}"><span class="post-title">{{ post.title }}</span> <span class="post-date">{{ post.date | date_to_string }}</span></a></li>
+        {% endfor %}
+      </ul>
+
+      <h2 class="archive"><a class="extra" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></h2>
+      <div id="twitter-button"><a href="https://twitter.com/Onswipe" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Onswipe</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+      <div id="subscribe-button">
+        <a class="extra" href="http://feeds.feedburner.com/{{ site.author.feedburner }}">Subscribe</a>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="contact">
+        <p>
+          {{ site.tagline }}
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  {% include JB/analytics %}
+</body>
+</html>

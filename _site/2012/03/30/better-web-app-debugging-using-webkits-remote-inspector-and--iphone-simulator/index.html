@@ -3,15 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Better Web App debugging using WebKit's remote inspector and  iPhone Simulator</title>
+   <title>Better Web App debugging using WebKit's remote inspector and iPhone Simulator</title>
    <meta name="author" content="Onswipe Engineering" />
    <link href="http://feeds.feedburner.com/" rel="alternate" title="your title" type="application/atom+xml" />
 
    <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/assets/themes/tom/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="/assets/themes/onswipe/css/syntax.css" type="text/css" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/assets/themes/tom/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/assets/themes/onswipe/css/screen.css" type="text/css" media="screen, projection" />
 
    <!-- Typekit -->
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
@@ -20,28 +20,28 @@
 <body>
 
   <div class="site">
-    <div class="title">
-      <a href="/">Onswipe Engineering</a>
+    <header>
+      <h1 class="title"><a href="/"><span>Onswipe</span> Engineering</a></h1>
 
-      <a class="extra" href="/archive.html">Archive</a>
-    </div>
+    </header>
   
     
 <div id="post">
-  <h1>Better Web App debugging using WebKit's remote inspector and  iPhone Simulator</h1>
+  <h2 class="post-title"><a href="">Better Web App debugging using WebKit's remote inspector and iPhone Simulator</a></h2>
   <p class="meta">
     30 March 2012 
     
   </p>
-  <p>Debugging tools like Firebug, and Webkit&#8217;s Inspector are now considered major assets in any Frontend Engineer&#8217;s toolbelt when building web applications for desktop. On the mobile front tools are quite limited, Mobile Safari&#8217;s debug console gives limited access to error and console logs which in many cases fail to be detailed enough to provide useful information.</p>
+  <div class="post-content">
+    <p>Debugging tools like Firebug, and Webkit&#8217;s Inspector are now considered major assets in any Frontend Engineer&#8217;s toolbelt when building web applications for desktop. On the mobile front tools are quite limited, Mobile Safari&#8217;s debug console gives limited access to error and console logs which in many cases fail to be detailed enough to provide useful information.</p>
 
 <p>Not many people know about WebKit&#8217;s ability to debug remote code. And what even less people know is that you can enable the remote inspector for Mobile Safari for iPhone Simulator in OSX with some minor hacks.</p>
 
 <p>At Onswipe, we&#8217;re constantly looking for ways to improve our workflows and make our lives a little easier. This time, we came across a private API in iOS that allows you to enable the remote inspector. After getting it to work through a very manual process, we searched the internets and found out a post on <a href='http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/'>Nathan de Vries&#8217; blog</a> that mentioned the same private API we came across.</p>
 
-<p>This is how it looks: <img src='http://dl.dropbox.com/u/4886457/Screenshots/iosd_s.png' alt='Remote Safari Inspector' /></p>
+<p>This is how it looks: <img src='http://engineering.onswipe.com.s3.amazonaws.com/img/iosd_s.png' alt='Remote Safari Inspector' /></p>
 
-<p><a href='http://dl.dropbox.com/u/4886457/Screenshots/iosd.png'>HI-RES Image</a></p>
+<p><a href='http://engineering.onswipe.com.s3.amazonaws.com/img/iosd.png'>HI-RES Image</a></p>
 
 <p>To make things easier, Cam and Juan got together and wrote a bash script for your debugging pleasure. The script automates the process of launching iPhone Simulator, attaching to the Mobile Safari process to enable the Inspector and launches Safari.</p>
 
@@ -85,21 +85,30 @@ open -a /Applications/Safari.app http://localhost:9999</code></pre>
 $ chmod a+x iosd
 $ ./iosd</code></pre>
 
+<h3 id='credit_where_credit_is_due'>Credit where credit is due</h3>
+
+<p>We couldn&#8217;t have made this happen without these resources:</p>
+
+<ul>
+<li>
+<p><a href='https://gist.github.com/2029432'>original bash script gist</a></p>
+</li>
+
+<li>
+<p><a href='http://www.codecouch.com/2011/11/remote-debugging-mobile-safari-web-apps-that-have-been-added-to-the-home-screen/'>Remote debuggin - code couch</a></p>
+</li>
+
+<li>
+<p><a href='http://atnan.com/blog/2011/11/17/enabling-remote-debugging-via-private-apis-in-mobile-safari/'>Enabling remote debugging - atnan.com</a></p>
+</li>
+</ul>
+
 <p>Hearts,</p>
 
 <p><strong>The Onswipe Engineering Team</strong></p>
-</div>
-
-<div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
+  </div>
+  <div id="post-comments">
     
-      <li><span>18 Mar 2012</span> &raquo; <a href="/2012/03/18/hello-world">Hello World!</a></li>
-    
-  </ul>
-</div>
-
-
 
 
   <div id="disqus_thread"></div>
@@ -120,29 +129,35 @@ $ ./iosd</code></pre>
 
 
 
+  </div>
+</div>
 
   
-    <div class="footer">
+    <aside>
+      <h2>Recent posts</h2>
+      <ul class="posts">
+        
+          <li><a href="/2012/03/30/better-web-app-debugging-using-webkits-remote-inspector-and--iphone-simulator"><span class="post-title">Better Web App debugging using WebKit's remote inspector and iPhone Simulator</span> <span class="post-date">30 Mar 2012</span></a></li>
+        
+          <li><a href="/2012/03/18/hello-world"><span class="post-title">Hello World!</span> <span class="post-date">18 Mar 2012</span></a></li>
+        
+      </ul>
+
+      <h2 class="archive"><a class="extra" href="/archive.html">Archive</a></h2>
+      <div id="twitter-button"><a href="https://twitter.com/Onswipe" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Onswipe</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+      <div id="subscribe-button">
+        <a class="extra" href="http://feeds.feedburner.com/">Subscribe</a>
+      </div>
+    </aside>
+
+    <footer>
       <div class="contact">
         <p>
-          Onswipe Engineering<br />
-          The Onswipe Engineering blog, brought to you by the Onswipe team.<br />
-          <a href='mailto:engineering@onswipe.com'>engineering@onswipe.com</a>
+          The Onswipe Engineering blog, brought to you by the Onswipe team.
         </p>
-      </div>
-      <div class="contact">
-        <p>
-          <a href="http://github.com/onswipe/">github.com/onswipe</a><br />
-          <a href="http://twitter.com/onswipe/">twitter.com/onswipe</a><br />
-        </p>
-      </div>
-      <div class="rss">
-        <a href="http://feeds.feedburner.com/">
-          <img src="/assets/themes/tom/images/rss.png" alt="Subscribe to RSS Feed" />
-        </a>
       </div>
     </div>
-  </div>
+  </footer>
 
   
 </body>
